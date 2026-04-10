@@ -32,6 +32,19 @@ layout: default
         </section>
     {% endif %}
 
+    <!-- Related Publications -->
+    {% assign related_pubs = site.publications | where_exp: "pub", "pub.funding contains page.funding_id" | sort: "date" | reverse %}
+    {% if related_pubs.size > 0 %}
+    <section class="related-publications" style="margin-top: 2rem; border-top: 1px solid #ddd; padding-top: 1rem;">
+        <h2>Related Publications</h2>
+        <div class="publications-list">
+            {% for pub in related_pubs %}
+              {% include publication-entry.html pub=pub %}
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
     <div style="margin-top: 2rem;">
         <a href="{{ '/funding' | relative_url }}">← Back to all funding</a>
     </div>

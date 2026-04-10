@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: publication
 title: "Example Publication"
 pub_id: "davis2026example"
 date: 2026-04-01
@@ -21,5 +21,7 @@ citation: "John Davis and Gage Hills, 'Example Publication', Example Conference,
 projects:
  - digital-optical-converters
  - epics
+awards:
+ - best_paper_2026
 ---
 Publication body (optional full abstract here)

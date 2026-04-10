@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications</title>
+    <title>Best Paper Award</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -15,9 +15,9 @@
                 <a href="/" >Home</a>
                 <a href="/people" >People</a>
                 <a href="/research" >Research</a>
-                <a href="/publications" class="current">Publications</a>
+                <a href="/publications" >Publications</a>
                 <a href="/funding" >Funding</a>
-                <a href="/awards" >Awards</a>
+                <a href="/awards" class="current">Awards</a>
                 <a href="/contact" >Contact</a>
             </nav>
         </div>
@@ -26,20 +26,34 @@
         
 
         <main>
-            <div class="publications-page">
-  <h1>Publications</h1>
+            <div class="award-page">
+    <div class="award-header">
+        <h1>Best Paper Award</h1>
+        <p class="award-year" style="margin: 0.5rem 0; font-size: 1.1rem; color: #666;">
+            Year: 2026
+        </p>
+        
+            <p class="award-category" style="margin: 0.5rem 0; color: #888;">
+                <strong>Category:</strong> Example Conference
+            </p>
+        
+    </div>
 
-  <div class="content">
-    <p>Our research group’s latest findings and published work.</p>
+    <hr>
 
+    <div class="award-content" style="margin: 2rem 0;">
+        <p>Recognition for outstanding research and presentation at the Example Conference 2026.</p>
 
-  </div>
+    </div>
 
-  
-  
-  <div class="publications-list">
+    <!-- Related Publications -->
     
-      <!-- Reusable publication entry component -->
+    
+    <section class="publications-with-award" style="margin-top: 2rem; border-top: 1px solid #ddd; padding-top: 1rem;">
+        <h2>Publications with This Award</h2>
+        <div class="publications-list">
+            
+              <!-- Reusable publication entry component -->
 
 <article class="publication-entry" style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
   <h3 style="margin-bottom: 0.5rem;">Example Publication</h3>
@@ -85,18 +99,15 @@
   <div id="cite-1" style="display:none;">John Davis and Gage Hills, 'Example Publication', Example Conference, 2026.</div>
 </article>
 
+            
+        </div>
+    </section>
     
-  </div>
-</div>
 
-<script>
-function copyToClipboard(elementId) {
-  const text = document.getElementById(elementId).innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    alert("Copied to clipboard!");
-  });
-}
-</script>
+    <div style="margin-top: 2rem;">
+        <a href="/awards">← Back to all awards</a>
+    </div>
+</div>
 
         </main>
 

@@ -12,6 +12,9 @@ collections:
   funding:
     output: true
     permalink: /funding/:path/
+  awards:
+    output: true
+    permalink: /awards/:path/
 sass:
   sass_dir: _sass
   style: compressed # Optional: results in a smaller CSS file

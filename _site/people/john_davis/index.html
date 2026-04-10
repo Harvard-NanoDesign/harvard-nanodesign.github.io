@@ -17,6 +17,7 @@
                 <a href="/research" >Research</a>
                 <a href="/publications" >Publications</a>
                 <a href="/funding" >Funding</a>
+                <a href="/awards" >Awards</a>
                 <a href="/contact" >Contact</a>
             </nav>
         </div>
@@ -32,7 +33,15 @@
       
       <h1>John Davis</h1>
       <p class="role"><strong>Graduate Researcher</strong></p>
-      <p class="email"><a href="mailto:johndavis@g.harvard.edu">johndavis@g.harvard.edu</a></p>
+      <div class="contact-links">
+        
+        
+          <p class="linkedin"><a href="https://www.linkedin.com/in/john-davis-a6b878133" target="_blank">LinkedIn</a></p>
+        
+        
+          <p class="google-scholar"><a href="https://scholar.google.com/citations?user=JTn--PQAAAAJ" target="_blank">Google Scholar</a></p>
+        
+      </div>
     </div>
 
     <hr>
@@ -62,48 +71,52 @@
           <h2>Publications</h2>
           <ul>
               
-                 <article class="publication-entry" style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
-                    <h3 style="margin-bottom: 0.5rem;">Example Publication</h3>
-                    <p class="authors" style="margin: 0; color: #555;">
-                    
-                        
-                        
-                        <a href="/people/john_davis/">John Davis</a>
-                        
-                        , 
-                    
-                        
-                        
-                        External Collaborator
-                        
-                        , 
-                    
-                        
-                        
-                        <a href="/people/gage_hills/">Gage Hills</a>
-                        
-                        
-                    
-                    </p>
-                    <p class="venue" style="margin: 0; font-style: italic;">Example Conference (2026)</p>
-                    
-                    <div class="pub-links" style="margin-top: 0.5rem;">
-                    
-                        <a href="https://ieeexplore.ieee.org" target="_blank" class="btn-pub">Link</a> |
-                    
-                    <button onclick="copyToClipboard('bib-1')" style="cursor: pointer; background: none; border: none; color: #007bff; padding: 0;">Copy BibTeX</button> |
-                    <button onclick="copyToClipboard('cite-1')" style="cursor: pointer; background: none; border: none; color: #007bff; padding: 0;">Copy Citation</button>
-                    </div>
+                <!-- Reusable publication entry component -->
 
-                    <div id="bib-1" style="display:none;">@inproceedings{davis2026example,
+<article class="publication-entry" style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+  <h3 style="margin-bottom: 0.5rem;">Example Publication</h3>
+  <p class="authors" style="margin: 0; color: #555;">
+    
+      
+      
+        <a href="/people/john_davis/">John Davis</a>
+      
+      , 
+    
+      
+      
+        External Collaborator
+      
+      , 
+    
+      
+      
+        <a href="/people/gage_hills/">Gage Hills</a>
+      
+      
+    
+  </p>
+  <p class="venue" style="margin: 0; font-style: italic;">Example Conference (2026)</p>
+  
+  <div class="pub-links" style="margin-top: 0.5rem;">
+    <a href="/publications/2026-example/">View Details</a> |
+    
+      <a href="https://ieeexplore.ieee.org" target="_blank" class="btn-pub">Link</a> |
+    
+    <button onclick="copyToClipboard('bib-1')" style="cursor: pointer; background: none; border: none; color: #007bff; padding: 0;">Copy BibTeX</button> |
+    <button onclick="copyToClipboard('cite-1')" style="cursor: pointer; background: none; border: none; color: #007bff; padding: 0;">Copy Citation</button>
+  </div>
+
+  <div id="bib-1" style="display:none;">@inproceedings{davis2026example,
   title={Example Publication},
   author={Davis, John and Hills, Gage},
   booktitle={Example Conference},
   year={2026}
 }
 </div>
-                    <div id="cite-1" style="display:none;">John Davis and Gage Hills, 'Example Publication', Example Conference, 2026.</div>
-                </article>
+  <div id="cite-1" style="display:none;">John Davis and Gage Hills, 'Example Publication', Example Conference, 2026.</div>
+</article>
+
               
           </ul>
       

@@ -5,6 +5,7 @@ layout: default
 <div class="project-page">
     <div class="project-header">
         <h1>{{ page.title }}</h1>
+        <p><b> {{page.subtitle}}</b></p>
         <p class="project-status"><strong>Status:</strong> {{ page.status | default: "In Progress" }}</p>
         
         {% if page.sponsors %}
@@ -67,17 +68,7 @@ layout: default
         <h3>Related Publications</h3>
         <div class="publications-list">
             {% for pub in related_pubs %}
-            <article class="publication-entry" style="margin-bottom: 1.5rem;">
-                <h4 style="margin-bottom: 0.3rem;">{{ pub.title }}</h4>
-                <p style="margin: 0; font-size: 0.9rem; color: #555;">{{ pub.authors | join: ", " }}</p>
-                <p style="margin: 0; font-size: 0.9rem; font-style: italic;">{{ pub.venue }} ({{ pub.date | date: "%Y" }})</p>
-                <div style="margin-top: 0.3rem; font-size: 0.85rem;">
-                    {% if pub.link %}
-                        <a href="{{ pub.link }}" target="_blank">View Paper</a> |
-                    {% endif %}
-                    <a href="{{ pub.url | relative_url }}">View Details</a>
-                </div>
-            </article>
+              {% include publication-entry.html pub=pub %}
             {% endfor %}
         </div>
     </section>

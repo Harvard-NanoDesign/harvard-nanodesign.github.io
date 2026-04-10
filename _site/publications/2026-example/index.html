@@ -17,6 +17,7 @@
                 <a href="/research" >Research</a>
                 <a href="/publications" class="current">Publications</a>
                 <a href="/funding" >Funding</a>
+                <a href="/awards" >Awards</a>
                 <a href="/contact" >Contact</a>
             </nav>
         </div>
@@ -25,7 +26,123 @@
         
 
         <main>
-            <p>Publication body (optional full abstract here)</p>
+            <div class="publication-page">
+    <div class="publication-header">
+        <h1>Example Publication</h1>
+        <p class="authors" style="margin: 0.5rem 0; color: #555; font-size: 1.1rem;">
+            
+                
+                
+                    <a href="/people/john_davis/">John Davis</a>
+                
+                , 
+            
+                
+                
+                    External Collaborator
+                
+                , 
+            
+                
+                
+                    <a href="/people/gage_hills/">Gage Hills</a>
+                
+                
+            
+        </p>
+        <p class="venue" style="margin: 0.5rem 0; font-style: italic; color: #666;">
+            Example Conference (Conference) • April 01, 2026
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="publication-meta" style="margin: 2rem 0; display: flex; gap: 2rem; flex-wrap: wrap; font-size: 0.95rem;">
+        <div>
+            
+                <strong>Paper:</strong> <a href="https://ieeexplore.ieee.org" target="_blank">View Paper</a>
+            
+        </div>
+        <div>
+            <strong>Export:</strong><br>
+            <button onclick="copyToClipboard('bibtex-content')" style="cursor: pointer; background: none; border: none; color: #007bff; padding: 0; text-decoration: underline;">Copy BibTeX</button> • 
+            <button onclick="copyToClipboard('citation-content')" style="cursor: pointer; background: none; border: none; color: #007bff; padding: 0; text-decoration: underline;">Copy Citation</button>
+        </div>
+    </div>
+
+    
+        <div class="related-projects" style="margin: 2rem 0; padding: 1rem; background-color: #f9f9f9; border-left: 4px solid #007bff;">
+            <strong>Related Projects:</strong>
+            <ul style="margin: 0.5rem 0 0 0;">
+                
+                    
+                    
+                        <li><a href="/research/digital-optical-converters/">Digital-to-Optical Converters (DOCs)</a></li>
+                    
+                
+                    
+                    
+                        <li><a href="/research/epics/">Electronic-Photonic Integrated Circuits</a></li>
+                    
+                
+            </ul>
+        </div>
+    
+
+    
+
+    
+        <div class="publication-awards" style="margin: 2rem 0; padding: 1rem; background-color: #fff3cd; border-left: 4px solid #ffc107;">
+            <strong>Awards:</strong>
+            
+                <ul style="margin: 0.5rem 0 0 0;">
+                    
+                        
+                        
+                            <li><a href="/awards/best-paper-2026/">Best Paper Award</a> (2026)</li>
+                        
+                    
+                </ul>
+            
+        </div>
+    
+
+    <div class="publication-content" style="margin: 2rem 0;">
+        <p>Publication body (optional full abstract here)</p>
+
+    </div>
+
+    <div class="publication-details" style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #eee;">
+        <h3>Citation Details</h3>
+        <div style="background-color: #f5f5f5; padding: 1rem; margin: 1rem 0; border-radius: 4px; font-family: monospace; font-size: 0.9rem;">
+            <div id="citation-content">John Davis and Gage Hills, 'Example Publication', Example Conference, 2026.</div>
+        </div>
+        
+        <h3 style="margin-top: 1.5rem;">BibTeX</h3>
+        <div style="background-color: #f5f5f5; padding: 1rem; margin: 1rem 0; border-radius: 4px; font-family: monospace; font-size: 0.9rem; white-space: pre-wrap; word-wrap: break-word;">
+            <div id="bibtex-content">@inproceedings{davis2026example,
+  title={Example Publication},
+  author={Davis, John and Hills, Gage},
+  booktitle={Example Conference},
+  year={2026}
+}
+</div>
+        </div>
+    </div>
+
+    <div style="margin-top: 2rem;">
+        <a href="/publications">← Back to all publications</a>
+    </div>
+</div>
+
+<script>
+function copyToClipboard(elementId) {
+    const text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text).then(() => {
+        alert("Copied to clipboard!");
+    });
+}
+</script>
 
         </main>
 

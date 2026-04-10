@@ -17,6 +17,7 @@
                 <a href="/research" class="current">Research</a>
                 <a href="/publications" >Publications</a>
                 <a href="/funding" >Funding</a>
+                <a href="/awards" >Awards</a>
                 <a href="/contact" >Contact</a>
             </nav>
         </div>
@@ -28,6 +29,7 @@
             <div class="project-page">
     <div class="project-header">
         <h1>Electronic-Photonic Integrated Circuits</h1>
+        <p><b> for energy-efficient communication in datacenter-scale distributed computing systems.</b></p>
         <p class="project-status"><strong>Status:</strong> Active</p>
         
         
@@ -93,17 +95,52 @@
         <h3>Related Publications</h3>
         <div class="publications-list">
             
-            <article class="publication-entry" style="margin-bottom: 1.5rem;">
-                <h4 style="margin-bottom: 0.3rem;">Example Publication</h4>
-                <p style="margin: 0; font-size: 0.9rem; color: #555;">John Davis, External Collaborator, Gage Hills</p>
-                <p style="margin: 0; font-size: 0.9rem; font-style: italic;">Example Conference (2026)</p>
-                <div style="margin-top: 0.3rem; font-size: 0.85rem;">
-                    
-                        <a href="https://ieeexplore.ieee.org" target="_blank">View Paper</a> |
-                    
-                    <a href="/publications/2026-example/">View Details</a>
-                </div>
-            </article>
+              <!-- Reusable publication entry component -->
+
+<article class="publication-entry" style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+  <h3 style="margin-bottom: 0.5rem;">Example Publication</h3>
+  <p class="authors" style="margin: 0; color: #555;">
+    
+      
+      
+        <a href="/people/john_davis/">John Davis</a>
+      
+      , 
+    
+      
+      
+        External Collaborator
+      
+      , 
+    
+      
+      
+        <a href="/people/gage_hills/">Gage Hills</a>
+      
+      
+    
+  </p>
+  <p class="venue" style="margin: 0; font-style: italic;">Example Conference (2026)</p>
+  
+  <div class="pub-links" style="margin-top: 0.5rem;">
+    <a href="/publications/2026-example/">View Details</a> |
+    
+      <a href="https://ieeexplore.ieee.org" target="_blank" class="btn-pub">Link</a> |
+    
+    <button onclick="copyToClipboard('bib-1')" style="cursor: pointer; background: none; border: none; color: #007bff; padding: 0;">Copy BibTeX</button> |
+    <button onclick="copyToClipboard('cite-1')" style="cursor: pointer; background: none; border: none; color: #007bff; padding: 0;">Copy Citation</button>
+  </div>
+
+  <div id="bib-1" style="display:none;">@inproceedings{davis2026example,
+  title={Example Publication},
+  author={Davis, John and Hills, Gage},
+  booktitle={Example Conference},
+  year={2026}
+}
+</div>
+  <div id="cite-1" style="display:none;">John Davis and Gage Hills, 'Example Publication', Example Conference, 2026.</div>
+</article>
+
             
         </div>
     </section>
