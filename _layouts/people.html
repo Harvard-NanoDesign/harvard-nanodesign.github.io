@@ -5,9 +5,9 @@ layout: default
 <div class="people-page">
     <p>{{ content }}</p>
 
-    <!-- Principle Investigator -->
+    <!-- Principal Investigator -->
     <div class="people-list">
-        {% assign pis = site.people | where: "role", "Principle Investigator" %}
+        {% assign pis = site.people | where: "role", "Principal Investigator" %}
         {% assign sorted_pis = pis | sort: "name" %}
         {% if sorted_pis.size > 0 %}
             <h2>Principal Investigator</h2>

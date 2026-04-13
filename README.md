@@ -19,7 +19,7 @@ To add yourself or update your bio:
   name: Your Full Name
   role: Your Role (e.g., Undergraduate Researcher, Graduate Researcher, Postdoctoral Researcher, Principle Investigator)
   email: your.email@example.com  # Optional
-  linkedin: your-linkedin-username  # Optional
+  linkedin: https://www.linkedin.com/in/your-linkedin-username  # Optional - full URL
   google_scholar: https://scholar.google.com/citations?user=YOUR_ID  # Optional - full URL
   image: /assets/images/your_headshot.jpg
   ---
